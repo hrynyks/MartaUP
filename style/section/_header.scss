@@ -1,0 +1,54 @@
+.header {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    width: 100%;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__item {
+        &-link {
+            font-weight: 600;
+            opacity: 0.5;
+            color: $light-color;
+
+            &:hover {
+                color: $light-color;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        white-space: nowrap;
+
+        &-link {
+            color: $light-color;
+        }
+    }
+
+    &__btn {
+        padding: 8px 43px;
+        background-color: $light-color;
+        border-radius: 20px;
+        color: #250F8A;
+        text-transform: uppercase;
+    }
+}

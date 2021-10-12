@@ -1,0 +1,40 @@
+.hero {
+    position: relative;
+    background: url(./../img/hero-bg.png) no-repeat center/cover;
+    padding: 211px 0 287px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: toRem(45);
+        line-height: 60px;
+        font-weight: 700;
+        color: $light-color;
+        max-width: 505px;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: toRem(24);
+        color: $light-color;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        font-weight: 600;
+        color: #250F8A;
+        background-color: #FFCA00;
+        border-radius: 25px;
+        padding: 13px 39px;
+        text-transform: uppercase;
+    }
+}

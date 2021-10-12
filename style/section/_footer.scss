@@ -1,0 +1,25 @@
+.footer {
+    padding: 20px 0;
+    background-color: #fff;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__items {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        &-link {
+            color: #272727;
+        }
+    }
+
+    &__copyright {
+        color: #272727;
+    }
+}

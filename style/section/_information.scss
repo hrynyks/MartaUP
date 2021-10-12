@@ -1,0 +1,65 @@
+.information {
+    padding: 26px 0;
+    background-color: #F4F9FD;
+    position: relative;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__image {
+        max-width: 650px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            order: 1;
+        }
+    }
+
+    &__content {
+        margin-top: 117px;
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &-bg {
+            position: absolute;
+            left: -30px;
+        }
+
+        @include a (tablet-xl) {
+            margin-top: 20px;
+        }
+    }
+
+    &__title {
+        font-size: toRem(35);
+        color: #202020;
+        position: relative;
+    }
+
+    &__descr {
+        line-height: 24px;
+        color: #272727;
+        opacity: 0.7;
+    }
+
+    &__bg {
+        position: absolute;
+        right: 0;
+        top: 203px;
+
+        @media screen and (max-width: 1575px) {
+            display: none;
+        }
+    }
+}
